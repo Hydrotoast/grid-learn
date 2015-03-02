@@ -43,12 +43,12 @@ Prediction Strategies
 
 The available prediction strategies are as follows:
 
-1. Nearest Neighbor
+**Nearest Neighbor**
 
 The predicted variables will take on the values of the closest learned sample
-to the width and heigh parameters.
+to the width and height parameters.
 
-2. Bilinear Interpolation
+**Bilinear Interpolation**
 
 The predicted variables will interpolate between the closest four samples to
 the width and height parameters.
