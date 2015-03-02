@@ -10,7 +10,7 @@ Usage
 This system is able to learn a set of dynamic constraints relative to a
 aprameter set.
 
-```
+```coffeescript
 constraints = [
   {parameters: {w: 0, h: 0}, values: []}
   {parameters: {w: 32, h: 0}, values: []}
@@ -27,7 +27,7 @@ values = predictor.predict window.innerWidth, window.innerHeight
 Explicit Formulas
 -----------------
 
-```
+```This may take a negligibl
 learner = new GridLearn new NearestNeighborPredictor()
 predictor = learner.fit constraints
 formulas = predictor.formulas
