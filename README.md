@@ -1,5 +1,5 @@
-GridLearn
-=========
+grid-learn
+==========
 
 A system for learning a model of dynamic collinear variables from the Cassowary
 linear constraint solver.
@@ -27,7 +27,7 @@ values = predictor.predict window.innerWidth, window.innerHeight
 Explicit Formulas
 -----------------
 
-```This may take a negligibl
+```coffeescript
 learner = new GridLearn new NearestNeighborPredictor()
 predictor = learner.fit constraints
 formulas = predictor.formulas
