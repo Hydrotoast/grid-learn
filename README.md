@@ -12,12 +12,8 @@ aprameter set.
 
 ```coffeescript
 constraints = [
-  {parameters: {w: 0, h: 0}, values: []}
-  {parameters: {w: 32, h: 0}, values: []}
-  {parameters: {w: 0, h: 32}, values: []}
-  {parameters: {w: 32, h: 32}, values: []}
-  {parameters: {w: 64, h: 0}, values: []}
-  {parameters: {w: 0, h: 64}, values: []}
+  {parameters: {w: [0, 32], h: [0, 32]}, constraints: []}
+  {parameters: {w: [32, 64], h: [32, 64]}, constraints: []}
 ]
 learner = new GridLearn new NearestNeighborPredictor()
 predictor = learner.fit constraints
